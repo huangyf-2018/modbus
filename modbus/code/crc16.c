@@ -76,5 +76,5 @@ unsigned int CRC16(unsigned char *puchMsg, unsigned int usDataLen)
     uchCRCHi = uchCRCLo ^ auchCRCHi[uIndex] ;
     uchCRCLo = auchCRCLo[uIndex] ;
   }
-  return (uchCRCHi << 8 | uchCRCLo) ;
+  return ((uchCRCHi << 8) | uchCRCLo) ;
 }
